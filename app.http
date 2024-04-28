@@ -1,0 +1,55 @@
+POST http://localhost:3000/signup 
+Content-Type: application/json
+
+{
+    "name":"sohel",
+    "email":"sohel123@gmail.com",
+    "password":"sohel123"
+}
+
+###
+
+POST http://localhost:3000/login 
+Content-Type: application/json
+
+{
+    "email":"sohel123@gmail.com",
+    "password":"sohel123"
+}
+
+
+###
+
+### POST http://localhost:3000/students 
+Content-Type: application/json
+
+{
+    "name": "John Doe",
+    "email": "john@example.com",
+    "grade": "A"
+}
+
+###
+
+PUT http://localhost:3000/students/:id 
+Content-Type: application/json
+
+{
+    "name": "John Doe",
+    "email": "john@example.com",
+    "grade": "B"
+}
+
+###
+
+### DELETE http://localhost:3000/students/:id 
+
+###
+
+POST http://localhost:3000/checkin 
+Content-Type: application/json
+
+{
+    "studentId": 123,
+    "checkinTime": "2024-04-30T10:00:00Z"
+}
